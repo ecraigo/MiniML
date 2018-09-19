@@ -2,7 +2,7 @@
 A minimal subset of the OCaml language itself implemented within OCaml.
 
 ## Contributors
-Ethan Craigo: substantial completions of expr.ml, expr.mli, evaluation.ml; all of writeup.pdf; minor edits to miniml_lex.mll and miniml_parse.mly.
+Ethan Craigo: most of expr.ml, expr.mli, evaluation.ml; minor edits to miniml_lex.mll and miniml_parse.mly.
 
 Stuart M. Shieber: miniml.ml, miniml_lex.mll, miniml_parse.mly; stub versions of expr.ml, expr.mli, evaluation.ml.
 
