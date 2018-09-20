@@ -12,9 +12,9 @@ Addition, multiplication, negation ("~"), and subtraction are supported for arit
 
 ## Usage
 
-These instructions are for Unix machines. OCaml and ocamlbuild must be installed to build this in the recommended manner. Once it is installed, clone the repository, open a terminal in the folder into which the repository was cloned, and first run ```ocamlbuild miniml.byte``` and then ```./miniml.byte```. A prompt will appear, into which one may type expressions. Pressing Enter evaluates the expression and prints the result, if the expression was well-formed. If the expression was not well-formed, an error will be reported. Press Ctrl-C to quit the prompt.
+These instructions are for Unix machines. OCaml and ocamlbuild must be installed to build this in the recommended manner. Once it is installed, clone the repository, open a terminal in the folder into which the repository was cloned, and first run `ocamlbuild miniml.byte` and then `./miniml.byte`. A prompt will appear, into which one may type expressions. Pressing Enter evaluates the expression and prints the result, if the expression was well-formed. If the expression was not well-formed, an error will be reported. Press Ctrl-C to quit the prompt.
 
-Syntax is similar to regular OCaml, with the biggest differences being that variable values do not persist over multiple lines and also that one must define functions in the form ```let f = fun a -> a * a``` rather than the OCaml syntactic sugar ```let f a = a * a```.
+Syntax is similar to regular OCaml, with the biggest differences being that variable values do not persist over multiple lines and also that one must define functions in the form `let f = fun a -> a * a` rather than the OCaml syntactic sugar `let f a = a * a`.
 
 By default this also uses dynamic scoping. Dynamic scoping has its limitations; it does not support nested functions, for example. There is, however, another version of evaluation supported using pure substitution semantics that one can access by changing the line in evaluation.ml that says:
 
